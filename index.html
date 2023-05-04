@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Bible Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/312cfff929.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen">
+            <div id="quiz-title" class="heading">Ultimate <br> Bible Quiz!</div>
+            <button class="btn" id="start-btn"><i class="fa-solid fa-chevron-right"></i>Start</button>
+        </div>
+
+        <div id="question-screen" class="screen hide">
+            <div id="status-bar" class="status-bar">
+                <div id="total-progress-bar" class="status-bar">
+                    <div id="to-complete-progress-bar" class="status-bar"></div>
+                </div>
+            </div>
+            <div id="quiz-status">QUESTION X OF Y</div>
+            <div id="question">The Question Goes Here</div>
+            <div id="answers">
+                <button class="answer-btn">Option 1</button>
+                <button class="answer-btn">Option 2</button>
+                <button class="answer-btn">Option 3</button>
+            </div>
+            <div id="pagination-btn">
+                <button id="prev-question-btn"><i class="fa-solid fa-chevron-left"></i>Back</button>
+                <button id="next-question-btn">Next<i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        
+        <div class="screen hide" id="end-screen">
+            <div id="num-correct" class="heading">You scored <br> X out Y!</div>
+            <button class="btn" id="end-return-btn"><i class="fa-solid fa-chevron-right"></i>Play Again</button>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
